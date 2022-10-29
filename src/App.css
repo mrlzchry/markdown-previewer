@@ -1,0 +1,154 @@
+.App{
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#editor {
+  background-color: aliceblue;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* float: left; */
+  width: 23.5%;
+  min-height: 300px;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  border: 3px solid aliceblue;
+}
+
+#preview {
+  background-color: aliceblue;
+  color:#282c34;
+  min-height: 80vh;
+  width: 60%;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10px;
+  border: 3px solid aliceblue;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #23241F;
+  color: rgb(255, 253, 254);
+  padding: 2px;
+}
+
+/* pre {
+  background-color: darkgrey;
+  padding: 2px;
+  width: 98%;
+} */
+
+table {
+  border-collapse: collapse;
+}
+
+th, tr, td {
+  background-color: rgb(235, 215, 102);
+  border: 3px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#preview-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#preview-header {
+  font-size: 30px;
+  background-color: #20355f;
+  min-width: 60%;
+  border: 3px solid #909ab6;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 0;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10px;
+}
+
+#editor-header {
+  margin-top: 1%;
+  font-size: 30px;
+  background-color: #20355f;
+  min-width: 23.5%;
+  border: 3px solid #909ab6;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  #editor-header {
+    width: 60%;
+  }
+
+  #editor {
+    min-height: 200px;
+    width: 60%;  }
+
+  #preview-header {
+    min-width: 90%;
+    }
+  
+  #preview {
+    min-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+  #editor-header {
+    width: 60%;
+  }
+
+  #editor {
+    min-height: 200px;
+    width: 60%;  }
+
+  #preview-header {
+    min-width: 90%;
+  }
+
+  #preview {
+    min-width: 90%;
+  }
+}
+
+#source-code {
+  text-decoration: none;
+  font-size: medium;
+  color:rgb(138, 50, 94);
+  margin-top: 3%;
+  margin-bottom: 0;
+}
